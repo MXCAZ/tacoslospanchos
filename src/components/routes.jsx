@@ -3,17 +3,17 @@ import { Routes, Route, useLocation } from "react-router-dom";
 import Home from "../pages/Home/Home";
 import Menu from "../pages/Menu/Menu";
 
-import OrderOnline from "../pages/Order/Order";
+// import OrderOnline from "../pages/Order/Order";
 
 import { AnimatePresence } from "framer-motion";
-import OrderScreen from "../pages/Order/screens/OrderScreen";
-import ChoseScreen from "../pages/Order/screens/ChoseScreen";
-import ReviewScreen from "../pages/Order/screens/ReviewScreen";
-import SelectPaymentScreen from "../pages/Order/screens/selectPaymentScreen";
-import PaymentScreen from "../pages/Order/screens/PaymentScreen";
-import CompleteOrderScreen from "../pages/Order/screens/CompleteOrderScreen";
-import AdminScreen from "../pages/Order/screens/AdminScreen";
-import QueueScreen from "../pages/Order/screens/QueueScreen";
+// import OrderScreen from "../pages/Order/screens/OrderScreen";
+// import ChoseScreen from "../pages/Order/screens/ChoseScreen";
+// import ReviewScreen from "../pages/Order/screens/ReviewScreen";
+// import SelectPaymentScreen from "../pages/Order/screens/selectPaymentScreen";
+// import PaymentScreen from "../pages/Order/screens/PaymentScreen";
+// import CompleteOrderScreen from "../pages/Order/screens/CompleteOrderScreen";
+// import AdminScreen from "../pages/Order/screens/AdminScreen";
+// import QueueScreen from "../pages/Order/screens/QueueScreen";
 import BestPlates from "../pages/Menu/BestPlates";
 
 const PageRoutes = () => {
