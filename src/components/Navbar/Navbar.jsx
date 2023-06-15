@@ -65,14 +65,14 @@ const Navbar = () => {
             </a>
           </li>
 
-          <li>
+          {/* <li>
             <a href="/OrderOnline" className="nav-links">
               <i>
                 <FontAwesomeIcon icon={faAddressCard} />
               </i>
               Order Now
             </a>
-          </li>
+          </li> */}
           <li>
             <a href="/Home#findUs" className="nav-links">
               <i>
