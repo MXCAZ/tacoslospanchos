@@ -1,6 +1,6 @@
 import { Routes, Route, useLocation } from "react-router-dom";
 
-import Plates from "../pages/Menu/BestPlates";
+import Plates from "../pages/Menu/Plates";
 import Home from "../pages/Home/Home";
 import Menu from "../pages/Menu/Menu";
 
