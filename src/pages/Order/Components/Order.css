@@ -1,0 +1,69 @@
+.orderContainer {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 50px;
+  height: auto;
+  /* justify-content: center; */
+}
+
+.adminContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 15%;
+}
+
+.buttonEdit {
+  width: 50px;
+  height: 50px;
+  background: #162938;
+  border: none;
+  outline: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 1em;
+  color: #fff;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 30px;
+  margin-top: -10px;
+}
+
+.largeLogo {
+  height: 100px;
+}
+
+.orderScreenContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 10%;
+}
+
+.reviewScreenContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 15%;
+}
+
+.foodList {
+  display: flex;
+  flex-direction: column;
+}
+
+@media screen and (max-width: 812px) {
+  .foodList {
+    display: flex;
+    flex-direction: row;
+  }
+}
