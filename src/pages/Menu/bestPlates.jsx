@@ -17,7 +17,7 @@ import greenEnchiladas from "./images/greenEnchiladas.jpeg";
 import redEnchiladas from "./images/redEnchiladas.jpeg";
 import summerSalad from "./images/summerSalad.jpeg";
 
-const BestPlates = () => {
+const Plates = () => {
   const [scale, setScale] = useState(1);
 
   useEffect(() => {
@@ -449,4 +449,4 @@ const BestPlates = () => {
   );
 };
 
-export default BestPlates;
+export default Plates;
