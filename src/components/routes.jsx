@@ -14,7 +14,7 @@ import { AnimatePresence } from "framer-motion";
 // import CompleteOrderScreen from "../pages/Order/screens/CompleteOrderScreen";
 // import AdminScreen from "../pages/Order/screens/AdminScreen";
 // import QueueScreen from "../pages/Order/screens/QueueScreen";
-import BestPlates from "../pages/Menu/BestPlates";
+import BestPlates from "../pages/Menu/bestPlates";
 
 const PageRoutes = () => {
   const location = useLocation();
