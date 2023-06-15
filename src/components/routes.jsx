@@ -22,9 +22,9 @@ const PageRoutes = () => {
     <>
       <AnimatePresence>
         <Routes location={location} key={location.pathname}>
-          <Route path="/Home" element={<Home />} />
+          <Route path="/" element={<Home />} />
           <Route path="/Menu" element={<Menu />} />
-          <Route path="/bestPlates" element={<BestPlates />} />
+          <Route path="/BestPlates" element={<BestPlates />} />
           {/* <Route path="/OrderOnline" element={<OrderOnline />} />
           <Route path="/Choose" element={<ChoseScreen />} />
           <Route path="/Order" element={<OrderScreen />} />

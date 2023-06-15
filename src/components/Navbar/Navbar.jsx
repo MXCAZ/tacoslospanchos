@@ -28,7 +28,7 @@ const Navbar = () => {
       <nav className="navbarItems">
         <div className="iconContainer">
           <div className="fs">
-            <a href="/Home">
+            <a href="/">
               <img src={logo} alt="logo" className="logoImg" />
             </a>
           </div>
@@ -40,7 +40,7 @@ const Navbar = () => {
         </div>
         <ul className={toogleNav}>
           <li>
-            <a href="/Home" className="nav-links">
+            <a href="/" className="nav-links">
               <i>
                 <FontAwesomeIcon icon={faHouse} />
               </i>
@@ -57,7 +57,7 @@ const Navbar = () => {
             </a>
           </li>
           <li>
-            <a href="/bestPlates" className="nav-links">
+            <a href="/BestPlates" className="nav-links">
               <i>
                 <FontAwesomeIcon icon={faCircleInfo} />
               </i>
@@ -74,7 +74,7 @@ const Navbar = () => {
             </a>
           </li> */}
           <li>
-            <a href="/Home#findUs" className="nav-links">
+            <a href="/" className="nav-links">
               <i>
                 <FontAwesomeIcon icon={faLocationDot} />
               </i>

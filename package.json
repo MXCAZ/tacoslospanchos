@@ -1,6 +1,5 @@
 {
   "name": "los-panchos",
-  "homepage": "https://tacoslospanchos.com",
   "proxy": "http://127.0.0.1:5001",
   "private": true,
   "version": "0.0.0",
