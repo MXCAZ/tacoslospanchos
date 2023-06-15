@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import "./Menu.css";
 import { motion } from "framer-motion";
 
-export default function Menu() {
+const Menu = () => {
   const menuImg = [
     {
       id: 0,
@@ -51,4 +51,6 @@ export default function Menu() {
       </motion.div>
     </div>
   );
-}
+};
+
+export default Menu;

@@ -16,7 +16,7 @@ import { AnimatePresence } from "framer-motion";
 // import QueueScreen from "../pages/Order/screens/QueueScreen";
 import BestPlates from "../pages/Menu/bestPlates";
 
-const PageRoutes = () => {
+const AnimatedRoutes = () => {
   const location = useLocation();
   return (
     <>
@@ -25,7 +25,16 @@ const PageRoutes = () => {
           <Route path="/" element={<Home />} />
           <Route path="/Menu" element={<Menu />} />
           <Route path="/BestPlates" element={<BestPlates />} />
-          {/* <Route path="/OrderOnline" element={<OrderOnline />} />
+          <Route path="*" element={<Home />} />
+        </Routes>
+      </AnimatePresence>
+    </>
+  );
+};
+export default AnimatedRoutes;
+
+{
+  /* <Route path="/OrderOnline" element={<OrderOnline />} />
           <Route path="/Choose" element={<ChoseScreen />} />
           <Route path="/Order" element={<OrderScreen />} />
           <Route path="/Review" element={<ReviewScreen />} />
@@ -33,12 +42,5 @@ const PageRoutes = () => {
           <Route path="/Payment" element={<PaymentScreen />} />
           <Route path="/complete" element={<CompleteOrderScreen />} />
           <Route path="/admin" element={<AdminScreen />} />
-          <Route path="/queue" element={<QueueScreen />} /> */}
-
-          <Route path="*" element={<Home />} />
-        </Routes>
-      </AnimatePresence>
-    </>
-  );
-};
-export default PageRoutes;
+          <Route path="/queue" element={<QueueScreen />} /> */
+}
