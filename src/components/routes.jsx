@@ -1,10 +1,28 @@
 import { Routes, Route, useLocation } from "react-router-dom";
 
-// import BestPlates from "../pages/Menu/BestPlates";
+import BestPlates from "../pages/Menu/BestPlates";
 import Home from "../pages/Home/Home";
 import Menu from "../pages/Menu/Menu";
 
 import { AnimatePresence } from "framer-motion";
+
+// const AnimatedRoutes = () => {
+//   const location = useLocation();
+//   return (
+//     <>
+//       <AnimatePresence>
+//         <Routes location={location} key={location.pathname}>
+//           <Route path="/" element={<Home />} />
+//           <Route path="/Menu" element={<Menu />} />
+//           <Route path="/BestPlates" element={<BestPlates />} />
+
+//           <Route path="*" element={<Home />} />
+//         </Routes>
+//       </AnimatePresence>
+//     </>
+//   );
+// };
+// export default AnimatedRoutes;
 
 const AnimatedRoutes = () => {
   const location = useLocation();
@@ -14,7 +32,7 @@ const AnimatedRoutes = () => {
         <Routes location={location} key={location.pathname}>
           <Route path="/" element={<Home />} />
           <Route path="/Menu" element={<Menu />} />
-          {/* <Route path="/BestPlates" element={<BestPlates />} /> */}
+          <Route path="/BestPlates" element={<BestPlates />} />
 
           <Route path="*" element={<Home />} />
         </Routes>
