@@ -25,7 +25,7 @@ const PageRoutes = () => {
           <Route path="/Home" element={<Home />} />
           <Route path="/Menu" element={<Menu />} />
           <Route path="/bestPlates" element={<BestPlates />} />
-          <Route path="/OrderOnline" element={<OrderOnline />} />
+          {/* <Route path="/OrderOnline" element={<OrderOnline />} />
           <Route path="/Choose" element={<ChoseScreen />} />
           <Route path="/Order" element={<OrderScreen />} />
           <Route path="/Review" element={<ReviewScreen />} />
@@ -33,7 +33,7 @@ const PageRoutes = () => {
           <Route path="/Payment" element={<PaymentScreen />} />
           <Route path="/complete" element={<CompleteOrderScreen />} />
           <Route path="/admin" element={<AdminScreen />} />
-          <Route path="/queue" element={<QueueScreen />} />
+          <Route path="/queue" element={<QueueScreen />} /> */}
 
           <Route path="*" element={<Home />} />
         </Routes>
