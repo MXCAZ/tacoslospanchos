@@ -101,13 +101,13 @@
 }
 
 .cardFood:hover .content {
-  color: #fff;
   width: 100%;
   height: 100%;
   left: 0;
   bottom: 0;
-
+  background: rgba(255, 255, 255, 0.25);
   backdrop-filter: blur(8px);
+  font-family: "Roboto", sans-serif;
 }
 .content p {
   margin: 10px 0 0;
@@ -142,4 +142,8 @@
 
 .galleryWrap .single:hover {
   transform: scale(1.2);
+}
+
+.welcome {
+  font-family: "Roboto", sans-serif;
 }

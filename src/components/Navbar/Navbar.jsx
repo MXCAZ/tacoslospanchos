@@ -61,7 +61,7 @@ const Navbar = () => {
               <i>
                 <FontAwesomeIcon icon={faCircleInfo} />
               </i>
-              Best Plates
+              Our Best Plates
             </a>
           </li>
 
@@ -73,14 +73,14 @@ const Navbar = () => {
               Order Now
             </a>
           </li> */}
-          <li>
+          {/* <li>
             <a href="/" className="nav-links">
               <i>
                 <FontAwesomeIcon icon={faLocationDot} />
               </i>
               Location
             </a>
-          </li>
+          </li> */}
         </ul>
       </nav>
     </div>

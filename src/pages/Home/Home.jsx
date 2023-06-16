@@ -80,19 +80,23 @@ const Home = () => {
             transition={{ duration: 1, delay: 0.25 }}>
             <h2>About Us</h2>
             <br />
-            Welcome to Tacos Los Panchos, where a world of exceptional Mexican
-            cuisine awaits you right here in Utah. Step into our vibrant and
-            inviting restaurant, where the tantalizing aromas of traditional
-            spices and savory delights envelop you from the moment you arrive.
+            <p className="welcome">
+              Welcome to Tacos Los Panchos, where a world of exceptional Mexican
+              cuisine awaits you right here in Utah. Step into our vibrant and
+              inviting restaurant, where the tantalizing aromas of traditional
+              spices and savory delights envelop you from the moment you arrive.
+            </p>
             <br />
             <br />
-            Prepare to embark on a culinary adventure that will transport your
-            taste buds to the heart of Mexico. Indulge in the absolute best
-            Mexican food that Utah has to offer. Our passion for authentic
-            flavors and impeccable craftsmanship shines through in every dish we
-            serve. From our signature shrimp tacos to a wide array of
-            mouthwatering delicacies, each bite is a testament to our commitment
-            to culinary excellence.
+            <p className="welcome">
+              Prepare to embark on a culinary adventure that will transport your
+              taste buds to the heart of Mexico. Indulge in the absolute best
+              Mexican food that Utah has to offer. Our passion for authentic
+              flavors and impeccable craftsmanship shines through in every dish
+              we serve. From our signature shrimp tacos to a wide array of
+              mouthwatering delicacies, each bite is a testament to our
+              commitment to culinary excellence.
+            </p>
           </motion.div>
         </div>
       </section>
@@ -127,7 +131,7 @@ const Home = () => {
                     <motion.div className="info">
                       <h2>{food.title}</h2>
                       <br />
-                      <p>{food.description}</p>
+                      <p className="welcome">{food.description}</p>
                     </motion.div>
                   )}
                 </motion.div>
