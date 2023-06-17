@@ -29,7 +29,12 @@ const Navbar = () => {
         <div className="iconContainer">
           <div className="fs">
             <a href="/">
-              <img src={logo} alt="logo" className="logoImg" />
+              <img
+                src={logo}
+                alt="logo"
+                className="logoImg"
+                style={{ width: "auto", height: "115px", objectFit: "cover" }}
+              />
             </a>
           </div>
         </div>

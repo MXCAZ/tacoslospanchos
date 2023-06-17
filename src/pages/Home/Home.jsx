@@ -78,9 +78,11 @@ const Home = () => {
             initial={{ opacity: 0, y: 75 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 1, delay: 0.25 }}>
-            <h2>About Us</h2>
+            <h2 style={{ textAlign: "center", color: "#fff" }}>About Us</h2>
             <br />
-            <p className="welcome">
+            <p
+              className="welcome"
+              style={{ color: "#fff", textAlign: "center" }}>
               Welcome to Tacos Los Panchos, where a world of exceptional Mexican
               cuisine awaits you right here in Utah. Step into our vibrant and
               inviting restaurant, where the tantalizing aromas of traditional
@@ -88,7 +90,9 @@ const Home = () => {
             </p>
             <br />
             <br />
-            <p className="welcome">
+            <p
+              className="welcome"
+              style={{ color: "#fff", textAlign: "center" }}>
               Prepare to embark on a culinary adventure that will transport your
               taste buds to the heart of Mexico. Indulge in the absolute best
               Mexican food that Utah has to offer. Our passion for authentic

@@ -6,7 +6,7 @@ const Footer = () => {
     <footer className="footerContainer">
       <div className="footer-content">
         <h3>Tacos Los Panchos</h3>
-        <p>"Best Tacos Tacos Ever"</p>
+        <p>"Best Tacos Ever"</p>
         <ul className="socials">
           <li>
             <a
