@@ -65,7 +65,7 @@ const Plates = () => {
                 <h3 style={{ color: "#fff", textAlign: "center" }}>
                   All Our Plates
                 </h3>
-                <p>
+                <p style={{ textAlign: "center" }}>
                   Welcome to Tacos Los Panchos, where a world of exceptional
                   Mexican cuisine awaits you right here in Utah. Step into our
                   vibrant and inviting restaurant, where the tantalizing aromas
@@ -86,7 +86,7 @@ const Plates = () => {
                 <h2 style={{ color: "#fff", textAlign: "center" }}>
                   Taco Asada
                 </h2>
-                <p>
+                <p style={{ textAlign: "center" }}>
                   "Asada, expertly grilled to perfection, nestled on a bed of
                   soft, golden Corn Tortillas. As you take your first bite, the
                   succulent flavors of the juicy Asada dance across your palate,
@@ -109,7 +109,7 @@ const Plates = () => {
                 <h2 style={{ color: "#fff", textAlign: "center" }}>
                   Taco Pastor
                 </h2>
-                <p>
+                <p style={{ textAlign: "center" }}>
                   "Tender Adobada, marinated to perfection, nestled on a bed of
                   warm, soft Corn Tortillas. The aroma of freshly chopped
                   cilantro and onions dances in the air, inviting you to take a
@@ -134,7 +134,7 @@ const Plates = () => {
                 <h2 style={{ color: "#fff", textAlign: "center" }}>
                   Taco Camaron
                 </h2>
-                <p>
+                <p style={{ textAlign: "center" }}>
                   "Delight your senses as succulent shrimp, perfectly cooked to
                   tender perfection, grace a bed of warm, soft Corn Tortillas.
                   The vibrant green of fresh cilantro and the crisp bite of
@@ -152,7 +152,7 @@ const Plates = () => {
 
       <br />
       <h2 style={{ textAlign: "center", color: "#d3462e", margin: "50px" }}>
-        Especial Plates
+        Specialty Plates
       </h2>
       <br />
 
@@ -174,9 +174,9 @@ const Plates = () => {
 
               <div className="content">
                 <h2 style={{ color: "#fff", textAlign: "center" }}>
-                  Shrimp cocktail
+                  Shrimp Cocktail
                 </h2>
-                <p>
+                <p style={{ textAlign: "center" }}>
                   Indulge in the refreshing and tantalizing flavors of our
                   Shrimp Cocktail, a delightful seafood appetizer that will
                   transport your taste buds to the seaside. This culinary
@@ -206,7 +206,7 @@ const Plates = () => {
                   QuesaBirrias
                 </h2>
 
-                <p>
+                <p style={{ textAlign: "center" }}>
                   "A true delight for taco enthusiasts. Our quesabirrias are a
                   tantalizing fusion of Mexican flavors, featuring tender,
                   slow-cooked beef that melts in your mouth. Prepared with a
@@ -230,7 +230,7 @@ const Plates = () => {
               </div>
               <div className="content">
                 <h2 style={{ color: "#fff", textAlign: "center" }}>Flautas</h2>
-                <p>
+                <p style={{ textAlign: "center" }}>
                   "A delightful Mexican dish that will tantalize your taste
                   buds. Crispy and golden, flautas are rolled tortillas filled
                   with a savory mixture of tender, seasoned meat or flavorful
@@ -256,7 +256,7 @@ const Plates = () => {
                 <h2 style={{ color: "#fff", textAlign: "center" }}>
                   Fried Tacos
                 </h2>
-                <p>
+                <p style={{ textAlign: "center" }}>
                   "Savor the irresistible crunch and delectable flavors of our
                   Fried Tacos with Rice and Beans, a mouthwatering feast that
                   will satisfy your cravings for Mexican comfort food. These
@@ -286,7 +286,7 @@ const Plates = () => {
                 <h2 style={{ color: "#fff", textAlign: "center" }}>
                   Green Enchiladas
                 </h2>
-                <p>
+                <p style={{ textAlign: "center" }}>
                   "Indulge in the mouthwatering flavors of our Chicken Green
                   Enchiladas, a delightful Mexican dish that will take your
                   taste buds on a flavorful journey. These enchiladas are filled
@@ -310,7 +310,7 @@ const Plates = () => {
                 <h3 style={{ color: "#fff", textAlign: "center" }}>
                   Red Enchiladas
                 </h3>
-                <p>
+                <p style={{ textAlign: "center" }}>
                   "Delight in the bold and comforting flavors of our Red Cheese
                   Enchiladas. These enchiladas are a celebration of rich, gooey
                   cheese wrapped in a blanket of warm, flavorful red enchilada
@@ -350,7 +350,7 @@ const Plates = () => {
                 <h2 style={{ color: "#fff", textAlign: "center" }}>
                   Shrimp Burrito
                 </h2>
-                <p>
+                <p style={{ textAlign: "center" }}>
                   our Shrimp Burrito, a seafood lover's dream wrapped in a
                   tortilla. This delectable creation features succulent,
                   perfectly seasoned shrimp as the star ingredient. Each shrimp
@@ -379,7 +379,7 @@ const Plates = () => {
                   Burrito Asada
                 </h3>
 
-                <p>
+                <p style={{ textAlign: "center" }}>
                   "Treat yourself to the mouthwatering flavors of our Asada
                   Burrito, a true delight for meat lovers. This culinary
                   masterpiece showcases tender and perfectly grilled steak as
@@ -404,7 +404,7 @@ const Plates = () => {
                 <h3 style={{ color: "#fff", textAlign: "center" }}>
                   Burrito al Pastor
                 </h3>
-                <p>
+                <p style={{ textAlign: "center" }}>
                   "Experience the tantalizing flavors of our Al Pastor Burrito,
                   a culinary journey inspired by traditional Mexican cuisine.
                   Our Al Pastor Burrito showcases tender and marinated pork that
@@ -431,7 +431,7 @@ const Plates = () => {
                 <h2 style={{ color: "#fff", textAlign: "center" }}>
                   Vegetarian Burrito
                 </h2>
-                <p>
+                <p style={{ textAlign: "center" }}>
                   "Delight in the wholesome flavors of our Vegetarian Burrito, a
                   delicious choice for plant-based enthusiasts and flavor
                   seekers alike. This delightful creation features a vibrant

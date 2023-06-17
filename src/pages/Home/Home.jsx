@@ -160,18 +160,18 @@ const Home = () => {
           <ul>
             <li>Tacos Los Panchos</li>
             <li>
-              <i className="fa-solid fa-location-dot"></i> 915 N Main St,
+              <i className="fa-solid fa-location-dot"></i> 915 N. Main St,
               Fillmore, UT 84631
             </li>
             <li>
-              <i className="fa-solid fa-phone"></i> Tel: 435-287-7219
+              <i className="fa-solid fa-phone"></i> Tel: (435) 287-7219
             </li>
             <li>
-              <i className="fa-solid fa-clock"></i> Monday to Saturday 11:00Am
+              <i className="fa-solid fa-clock"></i> Monday to Saturday 11:00AM
               to 9:00PM
             </li>
             <li>
-              <i className="fa-solid fa-calendar-xmark"></i> Sunday Close
+              <i className="fa-solid fa-calendar-xmark"></i> Sunday Closed
             </li>
           </ul>
         </motion.div>
