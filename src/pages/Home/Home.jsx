@@ -1,9 +1,11 @@
 import { useEffect, useState, useRef } from "react";
 
 import "./Home.css";
-
 import "@fontsource/roboto";
 import { motion } from "framer-motion";
+import Swal from "sweetalert2";
+import emailjs from "@emailjs/browser";
+
 import food from "./dataMenu";
 
 import background from "./images/tacos.jpeg";
@@ -42,6 +44,35 @@ const Home = () => {
     }, 3000);
     return () => clearInterval(intervalId);
   }, [backgroundImages]);
+
+  const form = useRef();
+
+  const sendEmail = (e) => {
+    e.preventDefault();
+
+    emailjs
+      .sendForm(
+        "service_3pb4ym8",
+        "template_1dtzrjj",
+        form.current,
+        "UtS5wF4XdHFhXqFWX"
+      )
+      .then(
+        (result) => {
+          console.log(result.text);
+          Swal.fire({
+            position: "center",
+            icon: "success",
+            title: "Your Message its been send",
+            showConfirmButton: true,
+          });
+          e.target.reset();
+        },
+        (error) => {
+          console.log(error.text);
+        }
+      );
+  };
 
   return (
     <div className="homeContainer" key={image}>
@@ -200,30 +231,28 @@ const Home = () => {
           whileInView={{ opacity: 1, x: 0 }}
           transition={{ duration: 1, delay: 0.25 }}
           className="contact-box">
-          <form>
+          <form ref={form} onSubmit={sendEmail}>
             <input
               type="text"
+              name="from_name"
               placeholder="Your Name"
               className="input-field"
             />
             <input
               type="email"
+              name="reply_to"
               placeholder="Your Email"
-              className="input-field"
-            />
-            <input
-              type="text"
-              placeholder="Phone(optional)"
               className="input-field"
             />
 
             <textarea
               type="text"
+              name="message"
               placeholder="Your Message"
               cols="30"
               rows="10"
               className="input-field textarea"></textarea>
-            <button type="button" className="formBtn">
+            <button type="submit" className="formBtn">
               Send Message
             </button>
           </form>
