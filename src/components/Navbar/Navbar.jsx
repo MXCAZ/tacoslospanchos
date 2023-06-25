@@ -40,7 +40,11 @@ const Navbar = () => {
         </div>
         <div className="menu-icons">
           <i>
-            <FontAwesomeIcon icon={toogleIcon} onClick={handleClick} />
+            <FontAwesomeIcon
+              icon={toogleIcon}
+              onClick={handleClick}
+              style={{ fontSize: "20px" }}
+            />
           </i>
         </div>
         <ul className={toogleNav}>
