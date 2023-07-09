@@ -155,22 +155,35 @@ const Home = () => {
           {food.map((food, index) => {
             const isOpen = index === openIndex;
             return (
-              <div className="card">
-                <motion.div
-                  className="item"
-                  key={food.id}
-                  onClick={() => setOpenIndex(isOpen ? -1 : index)}>
-                  <img src={food.image} alt="food" className="tacos-image" />
-
-                  {isOpen && (
-                    <motion.div className="info">
-                      <h2>{food.title}</h2>
-                      <br />
-                      <p className="welcome">{food.description}</p>
-                    </motion.div>
-                  )}
-                </motion.div>
+              <div className="cardContainer">
+                <div className="cardPlates" key={food.id}>
+                  <div className="imgBox">
+                    <img src={food.image} alt="" />
+                  </div>
+                  <div className="cardContent">
+                    <h2>{food.title}</h2>
+                    <p>{food.description}</p>
+                    <a href="/Menu">See the menu</a>
+                  </div>
+                </div>
               </div>
+
+              // <div className="card">
+              //   <div
+              //     className="item"
+              //     key={food.id}
+              //     onClick={() => setOpenIndex(isOpen ? -1 : index)}>
+              //     <img src={food.image} alt="food" className="tacos-image" />
+
+              //     {isOpen && (
+              //       <div className="info">
+              //         <h2>{food.title}</h2>
+              //         <br />
+              //         <p className="welcome">{food.description}</p>
+              //       </div>
+              //     )}
+              //   </div>
+              // </div>
             );
           })}
         </motion.div>
@@ -188,6 +201,17 @@ const Home = () => {
           initial={{ opacity: 0, x: -75 }}
           whileInView={{ opacity: 1, x: 0 }}
           transition={{ duration: 1, delay: 0.25 }}>
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3101.1701254126965!2d-112.3263440234391!3d38.988613471704795!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x874b5d5c777813bf%3A0x2ea2d828327b287e!2sTacos%20Los%20Panchos!5e0!3m2!1sen!2sus!4v1680641080760!5m2!1sen!2sus"
+            style={{ border: 0 }}
+            loading="lazy"
+            className="iframe"></iframe>
+        </motion.div>
+        <motion.div
+          initial={{ opacity: 0, x: 75 }}
+          whileInView={{ opacity: 1, x: 0 }}
+          transition={{ duration: 1, delay: 0.25 }}
+          className="iframeContainer">
           <ul>
             <li>Tacos Los Panchos</li>
             <li>
@@ -205,17 +229,6 @@ const Home = () => {
               <i className="fa-solid fa-calendar-xmark"></i> Sunday Closed
             </li>
           </ul>
-        </motion.div>
-        <motion.div
-          initial={{ opacity: 0, x: 75 }}
-          whileInView={{ opacity: 1, x: 0 }}
-          transition={{ duration: 1, delay: 0.25 }}
-          className="iframeContainer">
-          <iframe
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3101.1701254126965!2d-112.3263440234391!3d38.988613471704795!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x874b5d5c777813bf%3A0x2ea2d828327b287e!2sTacos%20Los%20Panchos!5e0!3m2!1sen!2sus!4v1680641080760!5m2!1sen!2sus"
-            style={{ border: 0 }}
-            loading="lazy"
-            className="iframe"></iframe>
         </motion.div>
       </div>
       <section className="contactBox">
@@ -236,12 +249,14 @@ const Home = () => {
               type="text"
               name="from_name"
               placeholder="Your Name"
+              required
               className="input-field"
             />
             <input
               type="email"
               name="reply_to"
               placeholder="Your Email"
+              required
               className="input-field"
             />
 
@@ -251,6 +266,7 @@ const Home = () => {
               placeholder="Your Message"
               cols="30"
               rows="10"
+              required
               className="input-field textarea"></textarea>
             <button type="submit" className="formBtn">
               Send Message

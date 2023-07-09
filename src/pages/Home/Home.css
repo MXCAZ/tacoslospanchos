@@ -39,9 +39,9 @@
   min-height: 400px;
   height: auto;
   min-width: 350px;
-  /* margin: auto; */
+
   margin: 10px;
-  /* padding: 10px; */
+
   position: relative;
 }
 
@@ -61,7 +61,7 @@
 
 .carousel {
   cursor: grab;
-  overflow: hidden;
+  /* overflow: hidden; */
 }
 
 .p {
@@ -206,4 +206,93 @@ form {
   .contact-box {
     width: 80%;
   }
+}
+
+.cardContainer {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.cardContainer .cardPlates {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  width: 360px;
+  height: 480px;
+  margin: 10px;
+  /* background: #fff; */
+  background: #d3462e;
+  border-radius: 20px;
+
+  transition: 0.5s;
+}
+
+.cardContainer .cardPlates:hover {
+  height: 620px;
+}
+
+.cardContainer .cardPlates .imgBox {
+  position: absolute;
+  top: 10px;
+  width: 327px;
+  height: 350px;
+  background: #333;
+  border-radius: 12px;
+  transition: 0.5s;
+  overflow: hidden;
+}
+
+.cardContainer .cardPlates:hover .imgBox {
+  top: -100px;
+  scale: 0.75;
+  box-shadow: 0 15px 45px rgba(0, 0, 0, 0.2);
+}
+
+.cardContainer .cardPlates .imgBox img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.cardContainer .cardPlates .cardContent {
+  position: absolute;
+  width: 100%;
+  padding: 0 30px;
+  text-align: center;
+  top: 380px;
+  height: 30px;
+  overflow: hidden;
+  transition: 0.5s;
+}
+
+.cardContainer .cardPlates:hover .cardContent {
+  height: 330px;
+  top: 220px;
+}
+
+.cardContainer .cardPlates .cardContent h2 {
+  font-size: 1.5em;
+
+  color: #fff;
+}
+.cardContainer .cardPlates .cardContent p {
+  color: #fff;
+}
+
+.cardContainer .cardPlates .cardContent a {
+  position: relative;
+  top: 15px;
+  display: inline-block;
+  padding: 12px 25px;
+  background: #03a9f4;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 8px;
 }
