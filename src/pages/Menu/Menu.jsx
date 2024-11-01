@@ -16,22 +16,6 @@ const Menu = () => {
       id: 2,
       image: new URL("./imgMenu/3.png", import.meta.url),
     },
-    {
-      id: 3,
-      image: new URL("./imgMenu/4.png", import.meta.url),
-    },
-    {
-      id: 4,
-      image: new URL("./imgMenu/5.png", import.meta.url),
-    },
-    {
-      id: 5,
-      image: new URL("./imgMenu/6.png", import.meta.url),
-    },
-    {
-      id: 6,
-      image: new URL("./imgMenu/7.png", import.meta.url),
-    },
   ];
 
   return (
